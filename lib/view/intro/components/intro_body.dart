@@ -13,6 +13,7 @@ class IntroBody extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.sizeOf(context);
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         SingleChildScrollView(
           child: Column(
@@ -64,9 +65,11 @@ class IntroBody extends StatelessWidget {
             ],
           ),
         ),
-        const Spacer(),
+
         if (Responsive.isDesktop(context)) const AnimatedImageContainer(),
-        const Spacer()
+        SizedBox(
+          width: MediaQuery.sizeOf(context).width * 0.05,
+        ),
       ],
     );
   }

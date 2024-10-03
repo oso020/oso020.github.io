@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view%20model/getx_controllers/certification_controller.dart';
+import 'package:flutter_portfolio/view/main/components/drawer/drawer.dart';
 import 'package:flutter_portfolio/view/projects/components/title_text.dart';
 import 'package:get/get.dart';
 import '../../res/constants.dart';
 import '../../view model/responsive.dart';
+import '../intro/components/side_menu_button.dart';
 import 'components/certification_grid.dart';
 
 class Certifications extends StatelessWidget {
@@ -13,9 +15,11 @@ class Certifications extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+
           if(Responsive.isLargeMobile(context))const SizedBox(
             height: defaultPadding,
           ),

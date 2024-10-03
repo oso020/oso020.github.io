@@ -47,4 +47,10 @@ List<Project> projectList = [
       'assets/images/news.JPG',
       'https://github.com/oso020/NEWS-APP-ROUTE'),
 
+  Project(
+      'Islami App',
+      'The Islami Application is a Flutter-based app that provides detailed information on Quranic surahs, along with customizable settings for language and theme preferences. The app is designed to enhance the Islamic learning experience, allowing users to easily navigate and read Quranic surahs where ever they are with simple UI to deal with, while supporting light and dark modes for a personalized experience',
+      'assets/images/islami.jpg',
+      'https://github.com/oso020/ISLAMI-APP'),
+
 ];

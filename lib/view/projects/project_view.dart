@@ -4,6 +4,7 @@ import 'package:flutter_portfolio/view%20model/getx_controllers/projects_control
 import 'package:flutter_portfolio/view%20model/responsive.dart';
 import 'package:flutter_portfolio/view/projects/components/title_text.dart';
 import 'package:get/get.dart';
+import '../main/components/drawer/drawer.dart';
 import 'components/projects_grid.dart';
 class ProjectsView extends StatelessWidget {
   ProjectsView({super.key});
@@ -11,6 +12,8 @@ class ProjectsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(),
+
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
